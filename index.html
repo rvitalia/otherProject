@@ -1,12 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="assets/scss/stile.css">
 </head>
 <body>
-    
+
+    <!-- ===================header================== -->
+    <header class="header">
+        <div class="header__left">
+            <ul class="header__nav">
+                <li class="li__item"><a href="" class="nav__item">Главная</a> </li>
+                <li class="li__item"><a href="" class="nav__item  nav__item__submenu">Статьи</a>
+                     <ul class="ul__submenu">
+                        <li class="submenu__item"><a href="" class="item__submenu">Создание сайтов</a></li>
+                        <li class="submenu__item"><a href="" class="item__submenu">Интернет-маркетинг</a> </li>
+                        <li class="submenu__item"><a href="" class="item__submenu">Продвижение видео</a> </li>
+                    </ul>
+                 </li>
+                <li class="li__item"><a href="" class="nav__item">Обо мне</a></li>
+                <li class="li__item"><a href="" class="nav__item">Реклама</a> </li>
+            </ul>
+        </div>
+        <div class="header__right">
+            <ul class="header__nav">
+                <li class="li__item"><a href="" class="nav__item">Профиль</a></li>
+                <li class="li__item"><a href="" class="nav__item">Выйти</a></li>
+            </ul>
+            <form action="/" method="post" >
+                <input class="header__search" type="text" placeholder="Поиск по блогу">
+            </form>
+        </div>
+    </header>
+
+    <div class="page">
+
+        <!-- =================================sidebar========================== -->
+
+        <aside class="sidebar">
+           <div class="sidebar__header">
+                <img src="assets/img/sidebar/sidebar.jpg" alt="sidebar image" width="300px">                
+           </div>
+           <div class="sidebar__content">
+                <div class="sidebar__photo">
+                    <img src="assets/img/sidebar/sidebarIcon.png" alt="sidebar icon" width="100px">
+                </div>                
+                <h4>Дмитрий Валак</h4>
+                <span class="sidebar__subtitle">блог front-end разработчика</span>
+                <div class="sidebar__social">
+                    <a href="" class="item__social" target="_blank">
+                        <img src="assets/img/sidebar/social sidebar/instagram (1) 1.svg" width="25px" alt="">
+                    </a>
+                    <a href="" class="item__social" target="_blank">
+                        <img src="assets/img/sidebar/social sidebar/vk 1.svg" width="25px" alt="">
+                    </a>
+                    <a href="" class="item__social" target="_blank">
+                        <img src="/assets/img/sidebar/social sidebar/pinterest 1.svg" width="25px" alt="">
+                    </a>
+                </div>
+                <div class="sidebar__text">
+                    Front-end разработчик. Практик верстки сайтов. Созданием сайтов занимаюсь с 2012 года. Работал в нескольких ИТ компаниях и наработал более 10 000 часов в создании сайтов различной сложности.
+                </div>
+           </div>  <!-- ======sidebar__content======= -->
+           <div class="sidebar__button">
+                <a href="" class="btn btn--red">Мои работы</a>
+                <button type="button" class="btn btn--blue">Написать мне</button>
+           </div>
+        </aside>
+        
+        <main class="main">
+            <div class="container">
+                hello
+            </div>            
+        </main>
+    </div>
+    <script src="assets/js/app.js"></script>
 </body>
 </html>

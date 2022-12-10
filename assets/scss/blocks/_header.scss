@@ -1,0 +1,100 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - #{$width-sidebar});//решетка и фигурные скобки чтоб использовать переменную
+    height: $height-header;
+    background-color: $black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: $z-index-header;
+    color: $white;
+}
+.header__right{
+    display: flex;
+}
+.header__nav{
+    display: flex;
+}
+.li__item{
+    transition: background 0.5s linear;
+    position: relative;
+    &:hover{
+        background-color: $blue;
+        > .ul__submenu{
+            display: block;
+        }
+    }
+}
+.nav__item{
+    display: block;
+    padding: 1.3rem 2.3rem 1.4rem 1.5rem;
+    font-size: 1.1rem;
+    font-family: inherit;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $white;
+}
+.nav__item__submenu{
+    position: relative;
+    &::after{
+        content:"";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 6px 5px 0 5px;
+        border-color: $white transparent transparent transparent;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        z-index: 1;
+        transform: translateY(-50%);
+    }
+}
+.ul__submenu{
+    display: none;
+    width: 16.5rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: $blue;
+    border-radius: 0 0 0.5rem 0.5rem;
+    box-shadow: 0 6px 8px rgba($blackShadow,0.2) ;
+    &:last-child{
+        padding-bottom: 0.7rem;
+    }
+}
+.item__submenu{
+    display: block;
+    padding:1rem 1.2rem;
+    font-size: 1.1rem;
+    font-family: inherit;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $white;
+}
+.submenu__item{
+    transition: background 0.3s linear;
+
+    &:hover{
+        background-color: darken($blue,20%);
+    }
+}
+.header__search{
+    max-width: 21.2rem;
+    height: 100%;
+    display: block;
+    background-color: transparent;
+    border: none;
+
+    &::placeholder{
+        color: darken($white, 10%);
+        font-size: 1.2rem;
+        font-weight: 400;
+        font-family: Roboto, sans-serif;
+    }
+}
+
+
