@@ -1,0 +1,79 @@
+.addPost{
+    width: 100%;
+    height: 7.4rem;
+    box-shadow: 0 15px 25px rgba($blackShadow, 45%);
+    background-color: $secondary;
+    margin-bottom: 3rem;
+    border-radius: 0.5rem;
+    position: relative;
+   
+}
+
+.addPost-form{
+    display: flex;
+    align-items: center;
+    height: 100%; 
+    width: 87%;
+    padding: 1.5rem 3rem;
+}
+
+.postText{
+    width: 100%;
+    height: 2.2rem;
+    background-color: transparent;
+    color: darken($color: $white, $amount: 20%);
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+    font-size: 1.2rem;
+    border: none;
+    resize: none;
+}
+
+.addPostForm-btns{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    justify-content: space-between;
+}
+.addPost-label{
+    width: 4.4rem;
+    height: 4.4rem;
+    background:$grayBtn url(../img/btns_post/photo\ 1.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color .1s linear, transform .4s linear ;
+    z-index: 1;
+
+    input{
+        display: none;
+    }
+    
+    &:hover{
+        background-color: darken($color: $grayBtn, $amount: 20%);
+        transform: scale(1.1);
+    }
+}
+.addPost-btn{
+    width: 4.4rem;
+    height: 4.4rem;
+    background: $blueBtn url(../img/btns_post/send\ 1.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    margin-left: 1.5rem;
+    transition: background-color .1s linear, transform .4s linear;
+    z-index: 1;
+    &:hover{
+        background-color: darken($color: $blueBtn, $amount: 20%);
+        transform: scale(1.1);
+    }
+}

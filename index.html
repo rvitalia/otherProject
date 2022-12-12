@@ -74,7 +74,37 @@
         
         <main class="main">
             <div class="container">
-                hello
+
+
+                <!-- ============stories============ -->
+                <div class="stories">
+                    <div class="grid">
+                        <div class="grid__item"><img src="assets/img/stories/Rectangle 4.jpg" alt="" width="140px">
+                        <span>отдых на природе</span><time datetime="2020-09-21">21.09.2020</time></div>
+                        <div class="grid__item"><img src="assets/img/stories/Rectangle 3.jpg" alt="" width="140px">
+                            <span>заканчиваю сложный проект</span><time datetime="2020-09-21">15.09.2020</time></div>
+                        <div class="grid__item"><img src="assets/img/stories/Rectangle 2.jpg" alt="" width="140px">
+                            <span>переехал в новую квартиру</span><time datetime="2020-09-21">11.09.2020</time></div>
+                        <div class="grid__item"><img src="assets/img/stories/Rectangle 1.jpg" alt="" width="140px">
+                            <span>осень пришла</span><time datetime="2020-09-21">28.08.2020</time></div>
+                    </div>
+                </div>  <!-- =====stories== -->
+
+                <!-- ============addPost============ -->
+                <div class="addPost">
+                    <form class="addPost-form" action="/" method="post">
+                        <textarea class="postText" placeholder="Напишите что-нибудь" name="post-text"></textarea>
+
+                        <!-- ------делаем кнопку загрузить картинку---- -->
+                        <div class="addPostForm-btns">
+                            <label class="addPost-label" for="add-post-file">
+                                <input type="file" id="add-post-file">
+                            </label>
+                            <button class="addPost-btn" type="submit"></button>
+                        </div>
+                    </form>
+                </div>
+
             </div>            
         </main>
     </div>
