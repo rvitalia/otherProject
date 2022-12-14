@@ -1,0 +1,84 @@
+.fullpost{
+    background-color: $primary;
+    font-size: 1.4rem;
+    box-shadow: 0 1.5rem 2.5rem rgba ($blackShadow, 35%);
+    border-radius: 0.5rem;
+    padding: 3rem 3rem 2rem;
+    color: $graytext;
+    margin-bottom: 3rem;
+}
+.text__post{
+    line-height: 1.5;
+    font-weight: 400;
+    font-family: Lato, sans-serif;
+}
+.post__ul{
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+}
+.post__item{
+    font-size: 1.4rem;
+    padding-bottom: 2.6rem;
+    font-family: Lato, sans-serif;
+    //padding-right: 3.7rem;
+    margin-left: 1rem;
+
+    &:not(:first-child):before{
+        display: inline-block;
+        content: "";
+        width: 0.6rem;
+        height: 0.6rem;
+        //margin-top:2rem;
+        border-radius: 50%;
+        background-color: $grayIcon;
+        margin-right: 1.6rem;
+        margin-left: 1.5rem;
+    }
+
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+}
+.post__content{
+    margin: -3rem -3rem 0;
+    overflow: hidden;
+    padding-bottom: 2.9rem;
+    // ниже код для того, чтоб картинка автоматиески уменьшалась
+    img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+.post__content--video{
+    margin: 0;
+}
+.post__title{
+    color: $graytext;
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+.footer__post{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.post__reed{
+    a{
+        font-size: 1.4rem;
+        font-family: Lato, sans-serif;
+        text-decoration: none;
+        color: $blueText;
+        opacity: 0.6;
+        transition: opacity 0.4s linear;
+        &:hover{
+            text-decoration: underline;
+            opacity: 1;
+
+        }
+    }
+}
