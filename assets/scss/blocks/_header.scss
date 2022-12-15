@@ -88,6 +88,8 @@
     display: block;
     background-color: transparent;
     border: none;
+    color: $white;
+
 
     &::placeholder{
         color: darken($white, 10%);
@@ -95,6 +97,8 @@
         font-weight: 400;
         font-family: Roboto, sans-serif;
     }
+ 
+
 }
 
 

@@ -1,0 +1,50 @@
+.work__content{
+   width: 100%;
+   display: flex;
+   height: auto;
+    margin-bottom: 3rem;
+}
+.content__image{
+    width: 50%;
+    height: auto;
+    max-height: 552px;
+    overflow: hidden;
+}
+.content__inner{
+    width: 50%;
+}
+.worktitle{
+    padding: 2.8rem 0 3rem 2.5rem;
+    font-family: Roboto, sans-serif;
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: $white
+}
+.work__text{
+    font-size: 1.6rem;
+    color: $graytext;
+    font-weight: 300;
+    font-family: Roboto, sans-serif;
+    line-height: 2.7rem;
+    padding: 0 2.5rem 3rem 2.5rem;
+}
+.work__tags{
+    padding: 0 0 4rem 2.5rem;
+    display: flex;
+}
+.tags__item{
+    color: $white;
+    background-color: $backgroundGold;
+    padding:0.4rem 0.9rem;
+    margin-right: 0.5rem;
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    border-radius: 0.3rem;
+}
+.work__button{
+    margin:0 2.5rem;
+    width: 100%;
+    display: flex;
+}

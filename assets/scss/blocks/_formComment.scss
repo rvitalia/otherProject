@@ -1,0 +1,51 @@
+.form__comments{
+    //margin-bottom: 5rem;
+    font-family: Roboto,sans-serif;
+}
+.comments__title{
+    font-weight: 500;
+    font-size: 1.6rem;
+    padding-bottom: 1.9rem;
+}
+
+.post__form__inner{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.focus__line{
+    display: block;
+    width: 0;
+    height: 1px;
+    background-color: $blueBtn;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    transition: width 1s linear;
+}
+.comment__input{
+    display: block;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    height: 2.5rem;
+    resize: none;
+    color: $white;
+
+
+    &::placeholder{
+        color: $white;
+        opacity: 0.2;
+    }
+    &:focus +.focus__line{
+            width: 100%;
+        }    
+}
+
+.btn__postpage{
+    padding: 1rem 1rem;
+    border-radius: 0.5rem;
+    margin: 1.2rem 0 5rem;
+}
