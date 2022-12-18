@@ -4,6 +4,10 @@
     justify-content: space-between;
     height: 4rem;
     max-width: 24rem;
+
+    @include breakpoint ($mobile-bp){
+        margin: 4rem auto;
+    }
 }
 .pagenav__item{
     width: 4rem;

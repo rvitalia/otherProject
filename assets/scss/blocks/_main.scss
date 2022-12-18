@@ -3,6 +3,10 @@
     height: calc(100%-#{$height-header});
     margin-left: $width-sidebar;
     margin-top: $height-header;
+
+    @include breakpoint ($tablet-bp){
+        margin-left: 0;
+    }
 }
 
 //width: calc(100% - #{$width-sidebar});//решетка и фигурные скобки чтоб использовать переменную

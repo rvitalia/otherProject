@@ -1,0 +1,45 @@
+.header__burger{
+    width: 3rem;
+    height:2rem;
+    display: none;
+    flex-direction: column;
+    background-color: transparent;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    border: none;
+
+
+
+    .burger ,&::before, &::after{
+        content: "";
+        display: flex;
+        flex-direction: column;
+        width: 3rem;
+        height: 0.2rem;
+        background-color: $white;
+        margin: 0.2rem 0;
+        transition: opacity 0.4s linear, transform 0.4s linear;
+        }
+        &.active{
+        span {
+            opacity: 0;
+        }
+        &::before{
+            transform: rotate(45deg);
+            margin-bottom: -1rem;
+        }
+        &::after{
+            transform: rotate(-45deg);
+        }
+    }
+    
+
+
+   
+
+
+    @include breakpoint ($tablet-bp){
+        display: flex;
+    }
+}
+

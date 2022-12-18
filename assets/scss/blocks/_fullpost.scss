@@ -6,6 +6,14 @@
     padding: 3rem 3rem 2rem;
     color: $graytext;
     margin-bottom: 3rem;
+
+    @include breakpoint ($mobile-bp){
+        font-size: 1.2rem;
+        padding: 2rem 1rem 0;
+        text-align: justify;
+        line-height: 1.5;
+        //margin-bottom: 1rem;
+    }
 }
 .text__post{
     line-height: 1.5;
@@ -16,13 +24,16 @@
     padding-top: 2rem;
     display: flex;
     align-items: center;
+
+    @include breakpoint ($mobile-bp){
+        padding-top: 1rem;
+        flex-wrap: wrap;
+    }
 }
 .post__item{
     font-size: 1.4rem;
     padding-bottom: 2.6rem;
     font-family: Lato, sans-serif;
-    //padding-right: 3.7rem;
-    margin-left: 1rem;
 
     &:not(:first-child):before{
         display: inline-block;
@@ -34,22 +45,37 @@
         background-color: $grayIcon;
         margin-right: 1.6rem;
         margin-left: 1.5rem;
+        @include breakpoint ($mobile-bp){
+            margin-left: 0.2rem;
+            margin-right: 0.3rem;
+        }
     }
 
     a{
         text-decoration: none;
         color: inherit;
     }
+    
+    @include breakpoint ($mobile-bp){
+        font-size: 1.1rem;
+        margin-left: 0;
+        padding-bottom: .2rem;
+
+        
+    }
 }
 .post__content{
+    max-width: 60rem;
+    height: auto;
     margin: -3rem -3rem 0;
     overflow: hidden;
-    padding-bottom: 2.9rem;
+    //padding-bottom: 2.9rem;
     // ниже код для того, чтоб картинка автоматиески уменьшалась
     img{
         display: block;
         width: 100%;
         height: auto;
+
     }
 }
 .post__content--video{
@@ -61,6 +87,12 @@
     font-weight: 700;
     font-size: 2rem;
     padding-bottom: 2rem;
+    padding-top:2rem;
+
+    @include breakpoint ($mobile-bp){
+        font-size: 1.5rem;
+        padding-bottom: 0.5rem;
+    }
 }
 .footer__post{
     display: flex;
@@ -75,10 +107,18 @@
         color: $blueText;
         opacity: 0.6;
         transition: opacity 0.4s linear;
+
+        @include breakpoint ($mobile-bp){
+            font-size: 1.1rem;
+            max-height: 1.2rem;
+        }
+    }
+
         &:hover{
             text-decoration: underline;
             opacity: 1;
-
-        }
+    }    
+    @include breakpoint ($mobile-bp){
+        max-height: 1.2rem;
     }
 }

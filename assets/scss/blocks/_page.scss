@@ -1,3 +1,10 @@
 .page{
     overflow: hidden;
+
+    @include breakpoint ($tablet-bp){
+        overflow: none;
+    }
+    @include breakpoint ($mobile-bp){
+        overflow: none;
+    }
 }

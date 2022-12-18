@@ -1,4 +1,5 @@
 @import'blocks/vars';
+@import 'blocks/mixin';
 @import "vendor/reset";
 
 *,
@@ -6,7 +7,6 @@
 *::before {
     box-sizing: border-box;
     font-size: 10px;
-
 }
 body, html{
     font-size: 10px;
@@ -40,3 +40,8 @@ body{
 @import 'blocks/formComment';
 @import 'blocks/search';
 @import 'blocks/myWorks';
+@import 'blocks/modalContact';
+@import 'blocks/sharemodal';
+@import 'blocks/modalVideo';
+@import 'blocks/burger';
+@import 'blocks/sidebarMobile';

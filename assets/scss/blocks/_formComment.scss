@@ -7,12 +7,43 @@
     font-size: 1.6rem;
     padding-bottom: 1.9rem;
 }
+.post__form{
+    &--profile{
+        display: flex;
+        justify-content: space-between;
+    }
+    &--modal{
+        width: 50rem;
+        height: 34.2rem;
+        background-color: $primary;
+        border-radius: 0.5rem;
+    }
+}
+.post__form--profile__left{
+    width: 65%;
+}
+.post__form--modal{
+    width: 100%;
+    max-width: 50rem;
+    height: 100%;
+    max-height: 34.2rem;
+}
+.post__form--profile__right{
+    width: 35%;
+}
 
 .post__form__inner{
     position: relative;
     width: 100%;
     height: auto;
     display: block;
+
+    &--myprofile{
+        margin-bottom: 2.5rem;
+    }
+    &--modal{
+        max-width: 34rem;
+    }
 }
 .focus__line{
     display: block;
@@ -42,10 +73,32 @@
     &:focus +.focus__line{
             width: 100%;
         }    
+
+    &--myprofile{
+        font-size: 1.4rem;
+        font-weight: 400;
+        font-family: Roboto, sans-serif;
+        padding-bottom: 1rem;
+    }
 }
 
-.btn__postpage{
-    padding: 1rem 1rem;
-    border-radius: 0.5rem;
-    margin: 1.2rem 0 5rem;
+.input__profile{
+    display: none;
+}
+.entered__profile{
+    display: block;
+    padding-left: 1.8rem;
+    font-family: Roboto,sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    transition: color .5s linear, text-decoration 0.5s linear;
+    &:hover{
+      
+        color: $blueBtn;
+        text-decoration: underline;
+    }
+}
+.img__profile{
+    display: block;
+    margin-right: auto;
 }

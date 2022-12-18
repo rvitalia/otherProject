@@ -2,12 +2,24 @@
     width: 60rem;
     height: 19.5rem;
     margin-bottom: 3rem;
+
+    // @include breakpoint ($mobile-bp){
+    //     width: auto;
+    // }
+
 }
 .grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 19.5rem;
     column-gap: 1.3rem;
+
+    @include breakpoint ($mobile-bp)
+    {
+        grid-template-columns: 15rem 15rem 15rem 15rem;
+        overflow: auto;
+        
+    }
 }
 .grid__item{
     background-color: $black;
@@ -18,6 +30,13 @@
     cursor: pointer;
     transition-duration: 0.2s;
 
+    a{  
+        position: relative;
+        z-index: 5;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
     &::after{
         display: block;
         content: "";

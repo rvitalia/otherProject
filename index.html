@@ -12,6 +12,9 @@
 
     <!-- ===================header================== -->
     <header class="header">
+        <button type="button" class="header__burger">
+            <span class="burger"></span>
+        </button>
         <div class="header__left">
             <ul class="header__nav">
                 <li class="li__item"><a href="index.html" class="nav__item">Главная</a> </li>
@@ -28,7 +31,7 @@
         </div>
         <div class="header__right">
             <ul class="header__nav">
-                <li class="li__item"><a href="" class="nav__item">Профиль</a></li>
+                <li class="li__item"><a href="myProfile.html" class="nav__item">Профиль</a></li>
                 <li class="li__item"><a href="" class="nav__item">Выйти</a></li>
             </ul>
             <form action="search.html" method="get" >
@@ -36,6 +39,8 @@
             </form>
         </div>
     </header>
+
+
 
     <div class="page">
 
@@ -68,10 +73,54 @@
            </div>  <!-- ======sidebar__content======= -->
            <div class="sidebar__button">
                 <a href="myWorks.html" class="btn btn--red">Мои работы</a>
-                <button type="button" class="btn btn--blue">Написать мне</button>
+                <a href="modal.html" class="btn btn--blue">Написать мне </a>
            </div>
         </aside>
-        
+        <!-- =================================sidebar mobile========================== -->
+
+
+        <aside class="sidebar sidebar--mobile">
+
+            <div class="sidebar__header--mobile">
+                <img src="assets/img/sidebar/sidebar.jpg" alt="sidebar image" width="300px" height="100px">                
+            </div>
+            
+            <div class="sidebar__content--mobile">
+                <div class="sidebar__photo--mobile">
+                    <img src="assets/img/sidebar/sidebarIcon.png" alt="sidebar icon" width="65px">
+                </div>                
+                <div class="sidebar__inner--mobile">
+                    <h4>Дмитрий Валак</h4>
+                    <span class="sidebar__subtitle">блог front-end разработчика</span>
+                </div>                 
+            </div> 
+
+            <!-- ================nav==================== -->
+
+            <div class="header__mobile">
+                <ul class="header__nav--mobile">
+                    <li class="li__item--mobile"><a href="" class="nav__item  nav__item__submenu">Статьи</a>
+                         <ul class="ul__submenu--mobile">
+                            <li class="submenu__item--mobile"><a href="postpage.html" class="item__submenu">Создание сайтов</a></li>
+                            <li class="submenu__item--mobile"><a href="" class="item__submenu">Интернет-маркетинг</a> </li>
+                            <li class="submenu__item--mobile"><a href="" class="item__submenu">Продвижение видео</a> </li>
+                        </ul>
+                     </li>
+                    <li class="li__item--mobile"><a href="" class="nav__item">Обо мне</a></li>
+                    <li class="li__item--mobile"><a href="" class="nav__item">Реклама</a> </li>
+                    <li class="li__item--mobile"><a href="myProfile.html" class="nav__item">Профиль</a> </li>
+                </ul>
+            </div>
+            
+            <!-- ======sidebar__content======= -->
+            <div class="sidebar__button">
+                 <a href="myWorks.html" class="btn btn--red">Мои работы</a>
+                 <a href="modal.html" class="btn btn--blue">Написать мне </a>
+            </div>
+         </aside>
+
+        <!-- ===================================main title-============================== -->
+       
         <main class="main">
             <div class="container">
 
@@ -79,14 +128,14 @@
                 <!-- ============stories============ -->
                 <div class="stories">
                     <div class="grid">
-                        <div class="grid__item"><img src="assets/img/stories/Rectangle 4.jpg" alt="" width="140px">
-                        <span>отдых на природе</span><time datetime="2020-09-21" class="stories__date">21.09.2020</time></div>
-                        <div class="grid__item"><img src="assets/img/stories/Rectangle 3.jpg" alt="" width="140px">
-                            <span>заканчиваю сложный проект</span><time datetime="2020-09-21" class="stories__date">15.09.2020</time></div>
-                        <div class="grid__item"><img src="assets/img/stories/Rectangle 2.jpg" alt="" width="140px">
-                            <span>переехал в новую квартиру</span><time datetime="2020-09-21" class="stories__date">11.09.2020</time></div>
-                        <div class="grid__item"><img src="assets/img/stories/Rectangle 1.jpg" alt="" width="140px">
-                            <span>осень пришла</span><time datetime="2020-09-21" class="stories__date">28.08.2020</time></div>
+                        <div class="grid__item"><a href="storiesmodal.html"><img src="assets/img/stories/Rectangle 4.jpg" alt="" width="140px">
+                            <span>отдых на природе</span><time datetime="2020-09-21" class="stories__date">21.09.2020</time></a></div>
+                        <div class="grid__item"><a href="storiesmodal.html"><img src="assets/img/stories/Rectangle 3.jpg" alt="" width="140px">
+                            <span>заканчиваю сложный проект</span><time datetime="2020-09-21" class="stories__date">15.09.2020</time></a></div>
+                        <div class="grid__item"><a href="storiesmodal.html"><img src="assets/img/stories/Rectangle 2.jpg" alt="" width="140px">
+                            <span>переехал в новую квартиру</span><time datetime="2020-09-21" class="stories__date">11.09.2020</time></a></div>
+                        <div class="grid__item"><a href="storiesmodal.html"><img src="assets/img/stories/Rectangle 1.jpg" alt="" width="140px">
+                            <span>осень пришла</span><time datetime="2020-09-21" class="stories__date">28.08.2020</time></a></div>
                     </div>
                 </div>  <!-- =====stories== -->
 

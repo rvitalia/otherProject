@@ -7,6 +7,10 @@
     z-index: $z-index-sidebar;
     background-color: $primary;
     box-shadow: 0 4px 4px rgba(#000000, 0.25);
+
+    @include breakpoint ($tablet-bp){
+        display: none;
+    }
 }
 .sidebar__header{
     width: 100%;
@@ -39,7 +43,14 @@
     margin: 1.8rem auto 6rem;
     display: flex;
     justify-content: space-between;
-
+    &--modal {
+        width: 100%;
+        height: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
 }
 .item__social{
     padding-right: 1.5rem;

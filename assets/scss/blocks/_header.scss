@@ -9,12 +9,22 @@
     right: 0;
     z-index: $z-index-header;
     color: $white;
+
+    @include breakpoint ($tablet-bp){
+        left: 0;
+        width: 100%;
+    }
+
 }
 .header__right{
     display: flex;
 }
 .header__nav{
     display: flex;
+    
+    @include breakpoint ($mobile-bp){
+        display: none;
+    }
 }
 .li__item{
     transition: background 0.5s linear;
