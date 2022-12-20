@@ -51,6 +51,9 @@
              display: block;
          }
      }
+     &:focus{
+        background-color: $blueNav;
+     }
      &.active{
         > .ul__submenu--mobile{
              display: block;

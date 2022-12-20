@@ -7,12 +7,14 @@
     <title>Document</title>
     <link rel="shortcut icon" href="#">
     <link rel="stylesheet" href="assets/scss/stile.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"></script>
 </head>
 <body>
 
     <!-- ===================header================== -->
-    <header class="header">
-        <button type="button" class="header__burger">
+    <header class="header" id="header">
+        <button type="button" class="header__burger" id="header__burger">
             <span class="burger"></span>
         </button>
         <div class="header__left">
@@ -79,7 +81,7 @@
         <!-- =================================sidebar mobile========================== -->
 
 
-        <aside class="sidebar sidebar--mobile">
+        <aside class="sidebar sidebar--mobile" id="sidebar--mobile">
 
             <div class="sidebar__header--mobile">
                 <img src="assets/img/sidebar/sidebar.jpg" alt="sidebar image" width="300px" height="100px">                
@@ -99,7 +101,7 @@
 
             <div class="header__mobile">
                 <ul class="header__nav--mobile">
-                    <li class="li__item--mobile"><a href="" class="nav__item  nav__item__submenu">Статьи</a>
+                    <li class="li__item--mobile" id="li__item--mobile"><a href="" class="nav__item  nav__item__submenu">Статьи</a>
                          <ul class="ul__submenu--mobile">
                             <li class="submenu__item--mobile"><a href="postpage.html" class="item__submenu">Создание сайтов</a></li>
                             <li class="submenu__item--mobile"><a href="" class="item__submenu">Интернет-маркетинг</a> </li>
@@ -115,7 +117,7 @@
             <!-- ======sidebar__content======= -->
             <div class="sidebar__button">
                  <a href="myWorks.html" class="btn btn--red">Мои работы</a>
-                 <a href="modal.html" class="btn btn--blue">Написать мне </a>
+                 <a href="modal.html" class="btn btn--blue" data-modal="modal">Написать мне </a>
             </div>
          </aside>
 
@@ -142,7 +144,7 @@
                 <!-- ============addPost============ -->
                 <div class="addPost">
                     <form class="addPost-form" action="/" method="post">
-                        <textarea class="postText" placeholder="Напишите что-нибудь" name="post-text"></textarea>
+                        <textarea class="postText" id="postText" placeholder="Напишите что-нибудь" name="post-text" data-autoresize></textarea>
 
                         <!-- ------делаем кнопку загрузить картинку---- -->
                         <div class="addPostForm-btns">

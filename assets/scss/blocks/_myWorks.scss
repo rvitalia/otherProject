@@ -3,15 +3,26 @@
    display: flex;
    height: auto;
     margin-bottom: 3rem;
+    flex-wrap: wrap;
 }
 .content__image{
     width: 50%;
     height: auto;
     max-height: 552px;
     overflow: hidden;
+
+        @include breakpoint ($mobile-bp){
+        width: 100%;
+        height: 30rem;
+    }
 }
+
 .content__inner{
     width: 50%;
+
+    @include breakpoint ($mobile-bp){
+        width: 100%;
+    }
 }
 .worktitle{
     padding: 2.8rem 0 3rem 2.5rem;

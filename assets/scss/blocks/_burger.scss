@@ -7,6 +7,8 @@
     margin-top: 1rem;
     margin-left: 1.5rem;
     border: none;
+ 
+
 
 
 
@@ -21,16 +23,17 @@
         transition: opacity 0.4s linear, transform 0.4s linear;
         }
         &.active{
-        span {
-            opacity: 0;
-        }
-        &::before{
-            transform: rotate(45deg);
-            margin-bottom: -1rem;
-        }
-        &::after{
-            transform: rotate(-45deg);
-        }
+            span {
+                opacity: 0;
+            }
+
+            &::before{
+                transform: rotate(45deg);
+                margin-bottom: -1rem;
+            }
+            &::after{
+                transform: rotate(-45deg);
+            }
     }
     
 

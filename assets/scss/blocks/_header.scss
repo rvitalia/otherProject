@@ -10,6 +10,11 @@
     z-index: $z-index-header;
     color: $white;
 
+    &.active{
+        z-index: 1001;
+        opacity: 0.8;
+    }
+
     @include breakpoint ($tablet-bp){
         left: 0;
         width: 100%;
